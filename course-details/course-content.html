@@ -1,0 +1,239 @@
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>OnLearn Video Player</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+       <link rel="stylesheet" href="/css/video-section.css">
+        </head>
+    <body>
+        <header class="header">
+            <div class="header-content">
+                <a href="#" class="logo">ONLEARN</a>
+                <button class="menu-toggle">☰</button>
+                <nav class="nav-links">
+                    <a href="/">Home</a>
+                    <a href="#">About</a>
+                    <a href="#">Contact</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="main-content">
+            <div class="video-container">
+                <video class="video-player" controls>
+                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                    <track src="captions.vtt" kind="subtitles" srclang="en" label="English" default>
+                    <track src="captions-es.vtt" kind="subtitles" srclang="es" label="Español">
+                    Your browser does not support the video tag.
+                </video>
+                </video>
+
+            </div>
+            <div class="video-navigation">
+                <button class="nav-btn prev-btn">
+                    <i class="fas fa-chevron-left"></i> Previous
+                </button>
+                <button class="nav-btn next-btn">
+                    <i class="fas fa-chevron-right"></i> Next
+                </button>
+             </div>
+            <div class="video-info">
+                <h1 class="video-title">Introduction to JavaScript</h1>
+                <p>This video introduces you to the basics of JavaScript, covering fundamental concepts and syntax.</p>
+            </div>
+            <div class="content-tabs">
+                <button class="tab active" data-tab="playlist">Playlist</button>
+                <button class="tab" data-tab="resources">Resources</button>
+                <button class="tab" data-tab="details">Details</button>
+                <button class="tab" data-tab="instructors">Instructors</button>
+                <button class="tab" data-tab="ai-summary">AI Summary</button>
+                <button class="tab" data-tab="notes">Notes</button>
+            </div>
+            <div class="tab-content active" id="playlist">
+                <div class="playlist-item" data-video="https://www.w3schools.com/html/mov_bbb.mp4" 
+                    data-title="Introduction to JavaScript" 
+                    data-description="This video introduces you to the basics of JavaScript.">
+                    <div class="thumbnail">
+                        <img src="/api/placeholder/160/90" alt="Video thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <h3>Introduction to JavaScript</h3>
+                        <p>5 minutes</p>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="video-completion">
+                            <input type="checkbox" class="completion-checkbox" id="video1">
+                            <label for="video1">Mark as completed</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="playlist-item" data-video="https://www.w3schools.com/html/movie.mp4" 
+                    data-title="Variables and Data Types" 
+                    data-description="Learn about variables and data types in JavaScript.">
+                    <div class="thumbnail">
+                        <img src="/api/placeholder/160/90" alt="Video thumbnail">
+                    </div>
+                    <div class="video-details">
+                        <h3>Variables and Data Types</h3>
+                        <p>8 minutes</p>
+                        <div class="progress-bar">
+                            <div class="progress"></div>
+                        </div>
+                        <div class="video-completion">
+                            <input type="checkbox" class="completion-checkbox" id="video1">
+                            <label for="video1">Mark as completed</label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="resources">
+                <div class="resources-grid">
+                    <div class="resource-card">
+                        <h4>Course Slides</h4>
+                        <p>Complete slide deck covering all topics from the JavaScript introduction course.</p>
+                        <a href="#" class="download-btn">Download PDF (2.5MB)</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Code Examples</h4>
+                        <p>Working code samples demonstrating key concepts from the tutorial.</p>
+                        <a href="#" class="download-btn">Download ZIP (1.2MB)</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Exercise Files</h4>
+                        <p>Practice exercises with solutions to reinforce your learning.</p>
+                        <a href="#" class="download-btn">Download ZIP (3.1MB)</a>
+                    </div>
+                    <div class="resource-card">
+                        <h4>Quick Reference Guide</h4>
+                        <p>Handy cheat sheet with JavaScript syntax and common methods.</p>
+                        <a href="#" class="download-btn">Download PDF (1.8MB)</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="tab-content" id="details">
+                <div class="details-grid">
+                    <div class="detail-card">
+                        <h4>Prerequisites</h4>
+                        <ul>
+                            <li>Basic HTML and CSS knowledge</li>
+                            <li>Understanding of web browsers</li>
+                            <li>Text editor installed (VS Code recommended)</li>
+                            <li>Basic computer literacy</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h4>What You'll Learn</h4>
+                        <ul>
+                            <li>JavaScript fundamentals and syntax</li>
+                            <li>Variables, data types, and operators</li>
+                            <li>Control structures and functions</li>
+                            <li>DOM manipulation basics</li>
+                            <li>Event handling</li>
+                        </ul>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Course Description</h4>
+                        <p>This comprehensive introduction to JavaScript is designed for beginners starting their programming journey. You'll learn fundamental programming concepts, syntax, and best practices while building practical skills through hands-on exercises.</p>
+                        <p>By the end of this course, you'll have a solid foundation in JavaScript programming and be ready to tackle more advanced topics.</p>
+                    </div>
+                    <div class="detail-card">
+                        <h4>Course Structure</h4>
+                        <ul>
+                            <li>5 core modules</li>
+                            <li>20+ hands-on exercises</li>
+                            <li>3 mini-projects</li>
+                            <li>Final assessment</li>
+                            <li>Certificate upon completion</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="instructors">
+                <div class="instructors-grid">
+                    <div class="instructor-card">
+                        <!-- <img src="/api/placeholder/400/200" alt="Instructor" class="instructor-image"> -->
+                        <div class="instructor-info">
+                            <h3 class="instructor-name">Dr. Sarah Johnson</h3>
+                            <p class="instructor-title">Senior JavaScript Developer & Educator</p>
+                            <div class="instructor-stats">
+                                <span>15+ Years Experience</span>
+                                <span>50K+ Students</span>
+                            </div>
+                            <p class="instructor-description">JavaScript expert specializing in modern web development. Former lead developer at Tech Corp and regular conference speaker.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+            
+                    <div class="instructor-card">
+                        <!-- <img src="/api/placeholder/400/200" alt="Instructor" class="instructor-image"> -->
+                        <div class="instructor-info">
+                            <h3 class="instructor-name">Mark Thompson</h3>
+                            <p class="instructor-title">Frontend Development Lead</p>
+                            <div class="instructor-stats">
+                                <span>10+ Years Experience</span>
+                                <span>30K+ Students</span>
+                            </div>
+                            <p class="instructor-description">Frontend specialist focusing on JavaScript frameworks and performance optimization. Creator of popular dev tools and libraries.</p>
+                            <div class="social-links">
+                                <a href="#" class="social-link">LinkedIn</a>
+                                <a href="#" class="social-link">Twitter</a>
+                                <a href="#" class="social-link">GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="ai-summary">
+                <div class="ai-summary">
+                    <button class="generate-summary-btn">Generate AI Summary</button>
+                    <div class="loading">Generating summary...</div>
+                    
+                    <div class="ai-summary-card">
+                        <h3>Key Points</h3>
+                        <ul class="key-points-list">
+                            <li>Introduction to JavaScript basics and core concepts</li>
+                            <li>Understanding variables and their scope in JavaScript</li>
+                            <li>Working with different data types and type conversion</li>
+                            <li>Basic operators and control flow structures</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="ai-summary-card">
+                        <h3>Technical Concepts Covered</h3>
+                        <ul class="key-points-list">
+                            <li>Variable declaration using var, let, and const</li>
+                            <li>Primitive data types: string, number, boolean</li>
+                            <li>Comparison operators and logical operators</li>
+                            <li>Basic control structures: if statements and loops</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="tab-content" id="notes">
+                <div class="notes-section">
+                    <div class="notes-header">
+                        <h3>Video Notes</h3>
+                        <button class="add-note-btn">Add Note</button>
+                    </div>
+                    <div class="notes-container"></div>
+                </div>
+            </div>
+        </main>
+
+    <script src="/js/content.js"></script>
+    <script src="/js/notes.js"></script>
+    <script src="/js/video.js"></script>
+        
+    </body>
+    </html>

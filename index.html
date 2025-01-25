@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+  <style>
+ 
+  </style>
+</head>
+
+<body>
+  <nav class="navbar">
+    <div class="navbar-logo">Onlearn</div>
+    <ul class="navbar-menu" id="navbar-menu">
+      <li><a href="#">Home</a></li>
+      <li><a href="#courses">Courses</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact Us</a></li>
+    </ul>
+    <div class="navbar-right">
+      <a href="#">Login</a>
+      <a href="#">Signup</a>
+      <div class="navbar-toggle" onclick="toggleMenu()">☰</div>
+    </div>
+  </nav>
+
+  <div class="HeroSection">
+    <div class="left-section">
+      <h1>Grow up your skills by</h1>
+      <h1>online course with onlearn</h1>
+      <button class="get-started-btn">Get Started</button>
+    </div>
+    <div class="right-section">
+      <img src="assets/image-uM5ZOTW7R-transformed 1.svg" alt="">
+    </div>
+  </div>
+  <h2 id="course_header-text">Popular Courses</h2>
+
+  <div id="courses"></div>
+
+  <footer id="main-footer">
+    <div class="footer-container">
+      <div class="footer-left">
+        <h3>Onlearn</h3>
+        <p>Learn from the best online courses and bootcamps</p>
+      </div>
+      <div class="footer-center">
+        <h3>Links</h3>
+        <ul>
+          <li><a href="#">Courses</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact Us</a></li>
+          <li><a href="#">FAQ</a></li>
+        </ul>
+      </div>
+      <div class="footer-right">
+        <h3>Follow Us</h3>
+        <ul>
+          <li><a href="#"><i class="si-facebook"></i>Facebook</a></li>
+          <li><a href="#"><i class="si-instagram"></i>Instagram</a></li>
+          <li><a href="#"><i class="si-twitter"></i>Twitter</a></li>
+          <li><a href="#"><i class="si-linkedin"></i>LinkedIn</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Onlearn All Rights Reserved</p>
+    </div>
+  </footer>
+
+  <script src="js/scripts.js"></script>
+  <script>
+    function toggleMenu() {
+      const menu = document.getElementById('navbar-menu');
+      menu.classList.toggle('active');
+    }
+  </script>
+</body>
+
+</html>
+
+

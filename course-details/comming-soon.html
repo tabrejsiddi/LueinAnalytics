@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Poppins', sans-serif;
+            background-color: #f5f5f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            overflow: hidden;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            position: relative;
+        }
+
+        .heading {
+            font-size: 50px;
+            font-weight: 600;
+            color: #0b7077;
+            animation: fadeInUp 1s ease-in-out;
+        }
+
+        .countdown {
+            font-size: 80px;
+            font-weight: 700;
+            color: #ff6347;
+            margin-top: 30px;
+            animation: fadeInUp 1.5s ease-in-out;
+        }
+
+        .message {
+            font-size: 20px;
+            color: #666;
+            margin-top: 20px;
+            animation: fadeInUp 2s ease-in-out;
+        }
+
+        .coming-btn {
+            padding: 15px 25px;
+            background-color: #0b7077;
+            color: #fff;
+            font-size: 18px;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+            display: inline-block;
+            transition: background-color 0.3s ease;
+            animation: fadeInUp 2.5s ease-in-out;
+        }
+
+        .coming-btn:hover {
+            background-color: #0e5257;
+        }
+
+        @keyframes fadeInUp {
+            0% {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .rotate {
+            font-size: 100px;
+            color: #ff6347;
+            /* animation: rotateEffect 5s linear infinite; */
+        }
+
+        @keyframes rotateEffect {
+            0% {
+                transform: rotate(0deg);
+            }
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="heading">We Are Coming Soon!</div>
+        <div class="countdown">
+            <span id="countdown"></span>
+        </div>
+        <div class="message">Stay tuned, something amazing is on the way!</div>
+        <a href="/" class="coming-btn">Back to Home</a>
+        <div class="rotate">🔜</div>
+    </div>
+
+    <script>
+        function updateCountdown() {
+            const countdownElement = document.getElementById("countdown");
+            const eventDate = new Date("2025-12-31T00:00:00"); // Set your event date here
+            const currentDate = new Date();
+            const timeDifference = eventDate - currentDate;
+
+            const days = Math.floor(timeDifference / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+            countdownElement.innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+        }
+
+        setInterval(updateCountdown, 1000); // Update countdown every second
+    </script>
+</body>
+</html>
+
