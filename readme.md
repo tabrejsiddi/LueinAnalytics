@@ -65,7 +65,7 @@ OnLearn is an online learning platform designed to help users grow their skills 
 
 The project is hosted online. You can access the live version of OnLearn here:
 
-[Live Link](#)
+[Live Link](https://luein-analytics-dun.vercel.app/)
 
 ---
 
